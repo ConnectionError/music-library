@@ -41,6 +41,9 @@ i {
 .overflow-hidden {
   overflow: hidden;
 }
+.gap-3 {
+  gap: 15px;
+}
 
 @media screen and (max-width: 760px) {
   h1 {

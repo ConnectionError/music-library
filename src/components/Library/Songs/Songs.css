@@ -1,0 +1,16 @@
+.song p {
+  height: 26px;
+}
+.song {
+  flex-grow: 1;
+  text-align: center;
+  width: 150px;
+}
+.songs {
+  display: flex;
+  overflow: auto;
+}
+.song-genre {
+  background: #f2f2f2;
+  padding: 5px;
+}
