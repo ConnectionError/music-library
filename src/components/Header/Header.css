@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  color: #f4f4f4;
+  align-items: center;
+  background: url("https://img.freepik.com/free-vector/abstract-background-consisting-colorful-arcs-illustration_456031-149.jpg?size=626&ext=jpg")
+    no-repeat center center / cover;
+}
+.flex-1 {
+  flex: 1;
+}
+.header-right {
+  padding: 25px 40px;
+  text-align: right;
+  margin-left: auto;
+}
