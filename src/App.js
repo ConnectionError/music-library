@@ -30,18 +30,24 @@ function App() {
           user,
         });
       });
-
-      spotify.getUserPlaylists().then((playLists) => {
+      spotify.getNewReleases().then((playLists) => {
         dispatch({
-          type: "SET_PLAYLISTS",
+          type: "SET_NEW_RELEASED_LIST",
           playLists,
         });
       });
 
-      spotify.getPlaylist("4CKGKQIsKG05yFFoGpAPp5").then((response) => {
+      spotify.getFeaturedPlaylists().then((playLists) => {
         dispatch({
-          type: "SET_DISCOVER_WEEKLY",
-          discover_weekly: response,
+          type: "SET_FEATURED_LIST",
+          playLists,
+        });
+      });
+
+      spotify.getAvailableGenreSeeds().then((playLists) => {
+        dispatch({
+          type: "SET_GENRE_LIST",
+          playLists,
         });
       });
     }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Body.css";
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
+import Library from "../Library/Library";
 
 const Body = () => {
   return (
@@ -9,7 +10,7 @@ const Body = () => {
       <Sidebar />
       <div className="w-100">
         <Header />
-        {/* <MainContent/> */}
+        <Library />
       </div>
     </div>
   );

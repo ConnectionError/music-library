@@ -1,10 +1,11 @@
 export const initialState = {
   user: null,
-  playLists: [],
+  newPlayLists: [],
+  favPlayLists: [],
+  genrePayLists: [],
   playing: false,
   item: null,
   token: null,
-  discover_weekly: null,
 };
 
 const reducer = (state, action) => {
@@ -21,15 +22,20 @@ const reducer = (state, action) => {
         ...state,
         token: action.token,
       };
-    case "SET_PLAYLISTS":
+    case "SET_NEW_RELEASED_LIST":
       return {
         ...state,
-        playLists: action.playLists,
+        newPlayLists: action.playLists,
       };
-    case "SET_DISCOVER_WEEKLY":
+    case "SET_FEATURED_LIST":
       return {
         ...state,
-        discover_weekly: action.discover_weekly,
+        favPlayLists: action.playLists,
+      };
+    case "SET_GENRE_LIST":
+      return {
+        ...state,
+        favPlayLists: action.playLists,
       };
     default:
       return state;
