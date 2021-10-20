@@ -35,7 +35,7 @@ const reducer = (state, action) => {
     case "SET_GENRE_LIST":
       return {
         ...state,
-        favPlayLists: action.playLists,
+        genrePayLists: action.playLists,
       };
     default:
       return state;

@@ -10,11 +10,11 @@ const Header = () => {
         <h4 className="m-0 align-right">
           all
           <span className="text-warning">
-            <i class="fas fa-sun"></i>
+            <i className="fas fa-sun"></i>
           </span>{" "}
           and all{" "}
           <span className="text-dark">
-            <i class="fas fa-moon"></i>
+            <i className="fas fa-moon"></i>
           </span>
         </h4>
       </div>

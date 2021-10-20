@@ -2,5 +2,6 @@
   display: flex;
 }
 .w-100 {
-  width: 100%;
+  min-width: 85%;
+  max-width: 100%;
 }

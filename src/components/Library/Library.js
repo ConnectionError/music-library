@@ -1,14 +1,17 @@
 import React from "react";
+import { useDataLayerValue } from "../DataLayer";
+import Songs from "./Songs/Songs";
+import "./Library.css";
 
 const Library = () => {
-  const Featured = () => {};
-  const Released = () => {};
-  const BrowseGenres = () => {};
+  const [{ newPlayLists, favPlayLists, genrePayLists }] = useDataLayerValue();
+  // console.log(newPlayLists, favPlayLists, genrePayLists);
   return (
     <div className="library">
-      {/* <Featured />
-      <Released />
-      <BrowseGenres /> */}
+      Welcome
+      <Songs favPlayLists={favPlayLists} />
+      <Songs newPlayLists={newPlayLists} />
+      <Songs genrePayLists={genrePayLists} />
     </div>
   );
 };
